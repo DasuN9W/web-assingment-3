@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oder - G store</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="icon" type="image/icon" href="./img/favicon.png">
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./dairyP.html">Dairy Products</a></li>
+                <li><a href="./Vegetables.html">Vegetables</a></li>
+                <li><a href="./Cosmetics.html">Cosmetics</a></li>
+                <li><a href="./index.html">Order</a></li>
+                <li><a href="./Loyalty.html">Loyalty Program</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+   <!-- Fruits Section -->
+   <section class="products-sections">
+    <section id="fruits">
+        <h2>Fresh Fruits</h2>
+        <div class="item">
+            <img src="images/fr3.webp" alt="Apple">
+            <p>Apple</p>
+            <span >1Kg :RS.850.00</span>
+          
+              <input type="number" id="apple-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Apple', 'Fruits')">Order Now</button>
+        
+        </div>
+        <div class="item">
+            <img src="images/fr5.webp" alt="Banana">
+            <p>Banana</p>
+            <span >1Kg :RS.555.00</span>
+            <input type="number" id="banana-quantity" min="0" step="0.1"  value="0">
+            <button class="add-button" onclick="addItem('Banana', 'Fruits')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/fr7.webp" alt="Orange">
+            <p>Orange</p>
+            <span >1Kg :RS.200.00</span>
+            <input type="number" id="orange-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Orange', 'Fruits')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/fr2.webp" alt="Grapes">
+            <p>Grapes</p>
+            <span >1Kg :RS.750.00</span>
+            <input type="number" id="grapes-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Grapes', 'Fruits')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/fr6.webp" alt="Mango">
+            <p>Mango</p>
+            <span >1Kg :RS.1150.00</span>
+            <input type="number" id="mango-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Mango', 'Fruits')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/frp.webp" alt="Pineapple">
+            <p>Pineapple</p>
+            <span >1Kg :RS.1200.00</span>
+            <input type="number" id="pineapple-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Pineapple', 'Fruits')">Order Now</button>
+        </div>
+    </section>
+
+
+    <!-- Vegetables Section -->
+    <section id="vegetables">
+        <h2>Vegetables</h2>
+        <div class="item">
+            <img src="images/cri.webp" alt="Carrot">
+            <p>Carrot</p>
+            <span >1Kg :RS.555.00</span>
+            <input type="number" id="carrot-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Carrot', 'Vegetables')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/bni.webp" alt="Beans">
+            <p>Beans</p>
+            <span >1Kg :RS.350.00</span>
+            <input type="number" id="beans-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Beans', 'Vegetables')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/bri.webp" alt="beet root">
+            <p>Beet Roots</p>
+            <span >1Kg :RS.250.00</span>
+            <input type="number" id="beet-root-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('beet-root', 'Vegetables')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/pota.webp" alt="Potato">
+            <p>Potato</p>
+            <span >1Kg :RS.650.00</span>
+            <input type="number" id="potato-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Potato', 'Vegetables')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/toi.webp" alt="Tomato">
+            <p>Tomato</p>
+            <span >1Kg :RS.775.00</span>
+            <input type="number" id="tomato-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Tomato', 'Vegetables')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/oi.webp" alt="Onion">
+            <p>Onion</p>
+            <span >1Kg :RS.600.00</span>
+            <input type="number" id="onion-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Onion', 'Vegetables')">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Dairy Produce Section -->
+    <section id="dairy-produce">
+        <h2>Dairy Produce</h2>
+        <div class="item">
+            <img src="images/milkpowder.webp" alt="Milk Powder">
+            <p>Milk Powder</p>
+            <span >1Kg :RS.1900.00</span>
+            <input type="number" id="milk-powder-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('milk-powder', 'Dairy Produce')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/che.webp" alt="Cheese">
+            <p>Cheese</p>
+            <span >1Kg :RS.2200.00</span>
+            <input type="number" id="cheese-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Cheese', 'Dairy Produce')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/you.webp" alt="Yogurt">
+            <p>Yogurt</p>
+            <span >per unit :RS.50.00</span>
+            <input type="number" id="yogurt-quantity" min="0"  value="0">
+            <button class="add-button" onclick="addItem('Yogurt', 'Dairy Produce')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/bu.webp" alt="Butter">
+            <p>Butter</p>
+            <span >1Kg :RS.450.00</span>
+            <input type="number" id="butter-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Butter', 'Dairy Produce')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/whi.webp" alt="Cream">
+            <p>Cream</p>
+            <span >1Kg :RS.550.00</span>
+            <input type="number" id="cream-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Cream', 'Dairy Produce')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/sug5.webp" alt="Eggs">
+            <p>Eggs</p>
+            <span >1Kg :RS.700.00</span>
+            <input type="number" id="eggs-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Eggs', 'Dairy Produce')">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Meat and Seafood Section -->
+    <section id="meat-seafood">
+        <h2>Meat and Seafood</h2>
+        <div class="item">
+            <img src="images/me1.webp" alt="Chicken">
+            <p>Chicken</p>
+            <span >1Kg :RS.1350.00</span>
+            <input type="number" id="chicken-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Chicken', 'Meat and Seafood')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/sal.webp" alt="Salmon">
+            <p>Salmon</p>
+            <span >1Kg :RS.1200.00</span>
+            <input type="number" id="salmon-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Salmon', 'Meat and Seafood')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/me3.webp" alt="Beef">
+            <p>Beef</p>
+            <span >1Kg :RS.2340.00</span>
+            <input type="number" id="beef-quantity" min="0" step="0.1" value="0">
+            <button class="add-button" onclick="addItem('Beef', 'Meat and Seafood')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/me6.webp" alt="Shrimp">
+            <p>Shrimp</p>
+            <span >1Kg :RS.3200.00</span>
+            <input type="number" id="shrimp-quantity" min="0" step="0.1" value="0">
+            <button class="add-button"  onclick="addItem('Shrimp', 'Meat and Seafood')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/me5.webp" alt="Pork">
+            <p>Pork</p>
+            <span >1Kg :RS.2200.00</span>
+            <input type="number" id="pork-quantity" min="0" step="0.1" value="0">
+            <button class="add-button"  onclick="addItem('Pork', 'Meat and Seafood')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/lamb.webp" alt="Lamb">
+            <p>Lamb</p>
+            <span >1Kg :RS.2100.00</span>
+            <input type="number" id="lamb-quantity" min="0" step="0.1" value="0">
+            <button class="add-button"  onclick="addItem('Lamb', 'Meat and Seafood')">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Baking and Cooking Ingredients Section -->
+    <section id="baking-cooking">
+        <h2>Baking and Cooking Ingredients</h2>
+        <div class="item">
+            <img src="images/piti.webp" alt="Flour">
+            <p>Flour</p>
+            <span >1Kg :RS.930.00</span>
+            <input type="number" id="flour-quantity" min="0" step="0.1" value="0">
+            <button class="add-button"  onclick="addItem('Flour', 'Baking and Cooking Ingredients')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/sug1.webp" alt="Sugar">
+            <p>Sugar</p>
+            <span >1Kg :RS.320.00</span>
+            <input type="number" id="sugar-quantity" min="0" step="0.1" value="0">
+            <button class="add-button"  onclick="addItem('Sugar', 'Baking and Cooking Ingredients')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/sug2.webp" alt="Baking Powder">
+            <p>Baking Powder</p>
+            <span >1Kg :RS.1670.00</span>
+            <input type="number" id="baking-powder-quantity" min="0" step="0.1" value="0">
+            <button class="add-button"  onclick="addItem('Baking Powder', 'Baking and Cooking Ingredients')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/sug8.webp" alt="salt">
+            <p>Salt</p>
+            <span >1Kg :RS.1980.00</span>
+            <input type="number" id="salt-quantity" min="0" step="0.1" value="0">
+            <button class="add-button"  onclick="addItem('salt', 'Baking and Cooking Ingredients')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/sug3.webp" alt="Bell pepper">
+            <p>Bell Pepper</p>
+            <span >1Kg :RS.760.00</span>
+            <input type="number" id="bell-pepper-quantity" min="0" step="0.1" value="0">
+            <button class="add-button"  onclick="addItem('bell-pepper', 'Baking and Cooking Ingredients')">Order Now</button>
+        </div>
+        <div class="item">
+            <img src="images/sug7.webp" alt="Chocolate Powder">
+            <p>Chocolate Powder</p>
+            <span >1Kg :RS.896.00</span>
+            <input type="number" id="chocolate-powder-quantity" min="0" step="0.1" value="0">
+            <button class="add-button"  onclick="addItem('chocolate-powder', 'Baking and Cooking Ingredients')">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Order Table -->
+    <section id="order">
+        <h2>Order Summary</h2>
+        <table id="order-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Quantity (Kg)</th>
+                    <th>Price</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Order items will be added here -->
+            </tbody>
+        </table>
+        <p>Total Price: <span id="total-price">Rs 0.00</span></p>
+        <button class="add-favorite" onclick="addToFavourites()">Add to Favourites</button>
+        <button class="apply-favorite" onclick="applyFavourites()">Apply Favourites</button>
+        <button class="clear-favorite" onclick="clearLocalStorage()">Clear Your Favourites</button>
+        <button class="buy-favorite" onclick="navigateToCheckout()">Buy Now</button>
+
+
+    </section>
+    </section>
+</main>
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="footer-info">
+                <h3>About Us</h3>
+                <p>Welcome to G Store, your one-stop destination for all your grocery needs. We offer a wide selection of fresh produce and household essentials to make your shopping experience convenient and enjoyable.</p>
+            </section>
+            <section class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@GSTORE.com</p>
+                <p>Phone: +123 456 789</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </section>
+        </div>
+        <p>&copy; 2024 G Store. All rights reserved.</p>
+   </footer>  
+   <script src="./js/main.js"></script>
+</body>
+</html>
